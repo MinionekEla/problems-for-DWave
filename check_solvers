@@ -1,0 +1,3 @@
+from dwave.cloud import Client
+client = Client.from_config(token='token')
+print(client.get_solvers(hybrid=True))
